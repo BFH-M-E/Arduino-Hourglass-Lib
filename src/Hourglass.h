@@ -1,6 +1,10 @@
 #ifndef HOURGLASS_H
 #define HOURGLASS_H
 
+#ifndef __AVR_ATmega2560__
+  #error Sorry, the Hourglass library only works with Arduino Mega2560
+#endif
+
 enum HourglassCycleTime
   {
     SLOW,
